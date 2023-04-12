@@ -24,6 +24,7 @@ builds:
         - hidraw
       env:
         - CGO_ENABLED=1
+        - CGO_LDFLAGS=-static
 archives:
   - format: tar.gz
     wrap_in_directory: false
